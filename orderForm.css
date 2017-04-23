@@ -1,0 +1,53 @@
+header {
+	background-color: #fff;
+	overflow: hidden;
+}
+
+error {color: #FF0000;
+
+}
+
+.error {color: #FF0000;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: #035757;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: .5em;
+	font-weight: bold;
+}
+
+p{
+	color: Black;
+	font-size: 16px;
+	text-align: left;
+	font-weight: bold;
+}
+
+h1{
+	color: Red;
+	font-size: 40px;
+	text-align: center
+}
+
+legend{
+	color: Blue;
+	font-size: 21px;
+	font-weight: bold;
+}
+
+
+footer{
+	background-color: aqua;
+}
+

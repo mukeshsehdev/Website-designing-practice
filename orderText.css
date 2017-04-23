@@ -1,0 +1,59 @@
+head {
+	background-color: #fff;
+	overflow: hidden;
+}
+
+header {
+	background-color: #fff;
+	overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: #035757;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: .5em;
+	font-weight: bold;
+}
+
+p{
+	color: Blue;
+	font-size: 16px;
+	text-align: left;
+	font-weight: bold;
+}
+
+h1{
+	color: Red;
+	font-size: 35px;
+	text-align: center
+}
+
+.privacy_statment{
+	text-align: center;
+	font-size: 35px;
+	padding-right: 5em;
+	padding-left: 5em;
+}
+
+.agree_button{
+	text-align: center;
+	font-size: 35px;
+	height: 30pt;
+	width: 75pt;
+	background-color: #FE6767;
+	border: 3px solid black;
+	margin: 0 auto;
+}
+
+footer{
+	background-color: aqua;
+}

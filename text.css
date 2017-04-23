@@ -1,0 +1,113 @@
+head {
+	background-color: #fff;
+	overflow: hidden;
+}
+
+header {
+	background-color: #fff;
+	overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: #035757;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: .5em;
+	font-weight: bold;
+}
+
+p{
+	color: Blue;
+	font-size: 16px;
+	text-align: left;
+	font-weight: bold;
+}
+
+h1{
+	color: Purple;
+	font-size: 35px;
+	text-align: center;
+}
+
+h2{
+	color: Red;
+	font-size: 35px;
+	text-align: center;
+}
+
+
+h3{
+	background-color: Beige;
+	text-align: center;
+}
+
+h4{
+	color: blueviolet;
+	background-color: Azure;
+	text-align:center;
+}
+
+h5{
+	color: Red;
+	font-size: 35px;
+	text-align: center;
+}
+
+.lucy{
+	text-align: center;
+	background-color: powderblue;
+}
+
+.about_us_paragraph{
+	text-align: center;
+	font-size: 35px;
+	padding-right: 10em;
+	padding-left: 10em;
+}
+.privacy_statment{
+	text-align: center;
+	font-size: 29px;
+	padding-right: 10em;
+	padding-left: 10em;
+}
+
+table{
+	border-style: solid;
+    border-width: 10px;
+	text-align: center;
+	width:100%;
+    background: aquamarine;
+}
+
+
+tr{
+    margin-left:75%; 
+    margin-right:5%;
+}
+
+td{
+	text-align: center;
+	border:1pt black;
+	width:100pt;
+	height:100pt;
+	margin-left:15%; 
+    margin-right:15%;
+}
+
+img{
+   max-width: 50%;
+   max-height: 50%;
+   margin: 3px;
+}
+
+footer{
+	background-color: aqua;
+}
