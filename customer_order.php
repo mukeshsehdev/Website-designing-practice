@@ -21,81 +21,82 @@
 			<!--PHP for the furniture choice option-->
 							<?php
 								$furniturePick = $_POST['furniture'];
+								$colorPick = $_POST['color'];
 								$Furn_Price = 0;
 								$Shipping_Fee = 0.12;
 								$Shipping_Total = 0;
 
 								//If statements for the furniture selection
-								    if ($furniturePick == "big_bank_theory") {
+								    if ($furniturePick == "Big Bang Theory Couch") {
 										$Furn_Price = 15000;
 									}
-									if ($furniturePick == "70s_show"){
+									if ($furniturePick == "That 70's show Basement Couch"){
 										$Furn_Price = 30000;
 									}
-									if ($furniturePick == "friends_couch"){
+									if ($furniturePick == "Friend's Central Perk Couch"){
 										$Furn_Price = 50000;
 									}
-									if ($furniturePick == "seinfeld_couch"){
+									if ($furniturePick == "Seinfeld & Costanza's Couch"){
 										$Furn_Price = 250000;
 									}
-									if ($furniturePick == "game_thrones"){
+									if ($furniturePick == "Game of Throne's Iron Throne"){
 										$Furn_Price = 5000000;
 									}
-									if ($furniturePick == "star_trek"){
+									if ($furniturePick == "Star Trek Captain's Chair"){
 										$Furn_Price = 150000;
 									}
-									if ($furniturePick == "men_in_black"){
+									if ($furniturePick == "Men in Black Egg Chair"){
 										$Furn_Price = 25000;
 									}
-									if ($furniturePick == "forrest_gump"){
+									if ($furniturePick == "Forrest Gump Bench"){
 										$Furn_Price = 400000;
 									}
-									if ($furniturePick == "star_wars"){
+									if ($furniturePick == "Star Wars Emperor's Throne"){
 										$Furn_Price = 400000;
 									}
-									if ($furniturePick == "throne_of_gondor"){
+									if ($furniturePick == "Throne of Gondor"){
 										$Furn_Price = 800000;
 									}
-									if ($furniturePick == "wayne's_world_couch"){
+									if ($furniturePick == "Wayne's World Couch & Chair"){
 										$Furn_Price = 25000;
 									}
-									if ($furniturePick == "back_to_future"){
+									if ($furniturePick == "Back to the Future Driver Seat"){
 										$Furn_Price = 75000;
 									}
-									if ($furniturePick == "simpsons_couch"){
+									if ($furniturePick == "The Simpson's Family Couch"){
 										$Furn_Price = 500000;
 									}
-									if ($furniturePick == "beavis_couch"){
+									if ($furniturePick == "Beavis & Butthead Couch"){
 										$Furn_Price = 10000;
 									}
-									if ($furniturePick == "scooby_doo"){
+									if ($furniturePick == "Mystery Machine Driver's Seat"){
 										$Furn_Price = 300000;
 									}
-									if ($furniturePick == "snoopy_house"){
+									if ($furniturePick == "Snoopy's Doghouse"){
 										$Furn_Price = 1000000;
 									}
-									if ($furniturePick == "spongebob_bed"){
+									if ($furniturePick == "Spongebob's Bed"){
 										$Furn_Price = 40000;
 									}
-									if ($furniturePick == "flintstone_couch"){
+									if ($furniturePick == "Flinstone's Couch"){
 										$Furn_Price = 5000000;
 									}
-									if ($furniturePick == "abe_lincoln"){
+									if ($furniturePick == "Abraham Lincoln's Chair"){
 										$Furn_Price = 1000000;
 									}
-									if ($furniturePick == "potus_desk"){
+									if ($furniturePick == "POTUS Desk"){
 										$Furn_Price = 999999999;
 									}
-									if ($furniturePick == "sweden_chair"){
+									if ($furniturePick == "Sweden Royalty Chair"){
 										$Furn_Price = 100000000;
 									}
-									if ($furniturePick == "oprah_chair"){
+									if ($furniturePick == "Oprah Winfrey's Chair"){
 										$Furn_Price = 250000;
 									}
-									if ($furniturePick == "conan_desk"){
+									if ($furniturePick == "Conan O'brian's Desk"){
 										$Furn_Price = 5000000;
 									}
-									if ($furniturePick == "queen_chair"){
+									if ($furniturePick == "Queen of England's Chair"){
 										$Furn_Price = 10000000;
 									}
 								//Shipping Total Cost
@@ -103,46 +104,7 @@
 							?>
 							<!--End of Furniture List-->
 		
-		
-		
-		<!--CUSTOMER RECEIPT-->
-			 <fieldset>
-				 <legend>FURNITURE RECEIPT</legend>
-				
-				<!--<div class = "receipt_page">-->
-				<!--</div>-->
-
-				<!--Display customer name and information of the Furniture choice-->
-				<?php
-				if ($generalError == 0){
-					echo "Name: ", $_POST['first_name'], ' ', $_POST['middle_name'], ' ', $_POST['last_name']."<br>";					
-					echo "Phone Number: ", $_POST['phone_number']."<br>";
-					echo "Email: ", $_POST['email']."<br>"; 
-					echo "Street: ", $_POST['street_input']."<br>";
-					echo "City: ", $_POST['city_input']."<br>";
-					echo "State: ", $_POST['state_input']."<br>";
-					echo "ZipCode: ", $_POST['zip_input']."<br>";
-					echo "<br>";
-					//echo "Product choice: ", $furniturePick.<"br">;
-					echo "Total: $", $Furn_Price."<br>";
-					echo "Shipping Total: $", $Shipping_Total."<br>";
-					echo "<br>";
-					echo "THANK YOU ORDERING FROM US!";
-				}
-				else {
-					echo "Fill in the requirements!";
-				}
-				?>
-				<br>
-				<!--Link to Customer Receipt-->
-				<a href ="furnitureorder.txt">Print Receipt</a>
-				<?php
-					$file = fopen("furnitureorder.txt","w");
-					fwrite($file," Name: ". $_POST['first_name']. ' ', $_POST['middle_name']. ' ', $_POST['last_name']);
-					fclose($file);
-				?>
-				</fieldset>
-		<!--End of CUSTOMER RECEIPT-->		
+	
 			
 					<fieldset>
 						<legend>Product Information</legend>
@@ -152,53 +114,53 @@
 						<!--List of Furnitures-->
 							<select name="furniture" id="$furniturePicks" required onchange="$furniturePick()" >
 								<option disabled selected value> Pick a furniture</option>
-								<option value="big_bank_theory">TV - Big Bang Theory Couch: $15,000</option>
-								<option value="70s_show">TV - That 70's show Basement Couch: $30,000</option>
-								<option value="friends_couch">TV - Friend's Central Perk Couch: $50,000</option>
-								<option value="seinfeld_couch">TV - Seinfeld & Costanza's Couch: $250,000</option>
-								<option value="game_thrones">TV - Game of Throne's Iron Throne: $5,000,000</option>
-								<option value="star_trek">TV - Star Trek Captain's Chair: $150,000</option>
-								<option value="men_in_black">Movie - Men in Black Egg Chair: $25,000</option>
-								<option value="forrest_gump">Movie - Forrest Gump Bench: $400,000</option>
-								<option value="star_wars">Movie - Star Wars Emperor's Throne: $400,000</option>
-								<option value="throne_of_gondor">Movie - Throne of Gondor: $800,000</option>
-								<option value="wayne's_world_couch">Movie - Wayne's World Couch & Chair: $25,000</option>
-								<option value="back_to_future">Movie - Back to the Future Driver Seat: $75,000</option>
-								<option value="simpsons_couch">Animation - The Simpson's Family Couch: $500,000</option>
-								<option value="beavis_couch">Animation - Beavis & Butthead Couch: $10,000</option>
-								<option value="scooby_doo">Animation - Mystery Machine Driver's Seat: $300,000</option>
-								<option value="snoopy_house">Animation - Snoopy's Doghouse: $1,000,000</option>
-								<option value="spongebob_bed">Animation - Spongebob's Bed: $40,000</option>
-								<option value="flintstone_couch">Animation - Flinstone's Couch: $5,000,000</option>
-								<option value="abe_lincoln">Celebrities/Famous People - Abraham Lincoln's Chair: $1,000,000</option>
-								<option value="potus_desk">Celebrities/Famous People - POTUS desk: $999,999,999</option>
-								<option value="sweden_chair">Celebrities/Famous People - Sweden Royalty Chair: $100,000,000</option>
-								<option value="oprah_chair">Celebrities/Famous People - Oprah Winfrey's Chair: $250,000</option>
-								<option value="conan_desk">Celebrities/Famous People - Conan O'brian's Desk: $5,000,000</option>
-								<option value="queen_chair">Celebrities/Famous People - Queen of England's Chair: $10,000,000</option>
+								<option value="Big Bang Theory Couch">TV - Big Bang Theory Couch: $15,000</option>
+								<option value="That 70's show Basement Couch">TV - That 70's show Basement Couch: $30,000</option>
+								<option value="Friend's Central Perk Couch">TV - Friend's Central Perk Couch: $50,000</option>
+								<option value="Seinfeld & Costanza's Couch">TV - Seinfeld & Costanza's Couch: $250,000</option>
+								<option value="Game of Throne's Iron Throne">TV - Game of Throne's Iron Throne: $5,000,000</option>
+								<option value="Star Trek Captain's Chair">TV - Star Trek Captain's Chair: $150,000</option>
+								<option value="Men in Black Egg Chair">Movie - Men in Black Egg Chair: $25,000</option>
+								<option value="Forrest Gump Bench">Movie - Forrest Gump Bench: $400,000</option>
+								<option value="Star Wars Emperor's Throne">Movie - Star Wars Emperor's Throne: $400,000</option>
+								<option value="Throne of Gondor">Movie - Throne of Gondor: $800,000</option>
+								<option value="Wayne's World Couch & Chair">Movie - Wayne's World Couch & Chair: $25,000</option>
+								<option value="Back to the Future Driver Seat">Movie - Back to the Future Driver Seat: $75,000</option>
+								<option value="The Simpson's Family Couch">Animation - The Simpson's Family Couch: $500,000</option>
+								<option value="Beavis & Butthead Couch">Animation - Beavis & Butthead Couch: $10,000</option>
+								<option value="Mystery Machine Driver's Seat">Animation - Mystery Machine Driver's Seat: $300,000</option>
+								<option value="Snoopy's Doghouse">Animation - Snoopy's Doghouse: $1,000,000</option>
+								<option value="Spongebob's Bed">Animation - Spongebob's Bed: $40,000</option>
+								<option value="Flinstone's Couch">Animation - Flinstone's Couch: $5,000,000</option>
+								<option value="Abraham Lincoln's Chair">Celebrities/Famous People - Abraham Lincoln's Chair: $1,000,000</option>
+								<option value="POTUS Desk">Celebrities/Famous People - POTUS desk: $999,999,999</option>
+								<option value="Sweden Royalty Chair">Celebrities/Famous People - Sweden Royalty Chair: $100,000,000</option>
+								<option value="Oprah Winfrey's Chair">Celebrities/Famous People - Oprah Winfrey's Chair: $250,000</option>
+								<option value="Conan O'brian's Desk">Celebrities/Famous People - Conan O'brian's Desk: $5,000,000</option>
+								<option value="Queen of England's Chair">Celebrities/Famous People - Queen of England's Chair: $10,000,000</option>
 							</select>
 							</label>
 							<br>
 							</br>
 							<label> Pick color of choice (NO EXTRA CHARGE!)
 							<br>
-							<select name="color" id="choose_color" required>
+							<select name="color" id="choose_color" required onchange="$colorPick()" >
 								<option disabled selected value>Pick a color</option>
-								<option>Red</option>
-								<option>Maroon</option>
-								<option>Indian Red</option>
-								<option>Mango Orange</option>
-								<option>Olive Green</option>
-								<option>Forest Green</option>
-								<option>Shamrock</option>
-								<option>Teal Blue</option>
-								<option>Cerulean Blue</option>
-								<option>Cobalt</option>
-								<option>Royal Purple</option>
-								<option>Gold</option>
-								<option>Silver Gray</option>
-								<option>Night Black</option>
-								<option>White</option>
+								<option value ="Red">Red</option>
+								<option value = "Maroon">Maroon</option>
+								<option value = "Indian Red">Indian Red</option>
+								<option value = "Mango Orange">Mango Orange</option>
+								<option value = "Olive Green">Olive Green</option>
+								<option value = "Forest Green">Forest Green</option>
+								<option value = "Shamrock">Shamrock</option>
+								<option value = "Teal Blue">Teal Blue</option>
+								<option value = "Cerulean Blue">Cerulean Blue</option>
+								<option value = "Cobalt">Cobalt</option>
+								<option value = "Royal Purple">Royal Purple</option>
+								<option value = "Gold">Gold</option>
+								<option value = "Silver Gray">Silver Gray</option>
+								<option value = "Night Black">Night Black</option>
+								<option value = "White">White</option>
 							</select>
 							</label>
 							</br>
@@ -526,6 +488,63 @@
 								<p></p>
 							</div>
 						</fieldset>
+								<!--CUSTOMER RECEIPT-->
+	
+	<!--Furniture Receipt PHP-->						
+			 <fieldset>
+				 <legend>FURNITURE RECEIPT</legend>
+				
+				<!--<div class = "receipt_page">-->
+				<!--</div>-->
+
+				<!--Display customer name and information of the Furniture choice-->
+				<?php
+				if ($generalError == 0){
+					echo "Name: ", $_POST['first_name'], ' ', $_POST['middle_name'], ' ', $_POST['last_name']."<br>";					
+					echo "Phone Number: ", $_POST['phone_number']."<br>";
+					echo "Email: ", $_POST['email']."<br>"; 
+					echo "Street: ", $_POST['street_input']."<br>";
+					echo "City: ", $_POST['city_input']."<br>";
+					echo "State: ", $_POST['state_input']."<br>";
+					echo "ZipCode: ", $_POST['zip_input']."<br>";
+					echo "<br>";
+					echo "Product choice: ", $furniturePick."<br>";
+					echo "Color choice: ", $colorPick."<br>";
+					echo "Total: $", $Furn_Price."<br>";
+					echo "Shipping Total: $", $Shipping_Total."<br>";
+					echo "<br>";
+					echo "THANK YOU FOR ORDERING FROM US!";
+				}
+				else {
+					echo "Fill in the requirements!";
+				}
+				?>
+				<br>
+				<!--Link to Customer Receipt Text File-->
+				<a href ="furnitureorder.txt">Print Receipt</a>
+				<?php
+					$file = fopen("furnitureorder.txt","w");
+					fwrite($file, "FAME & FURNITURE Customer Receipt"."\n");
+					fwrite($file, "_________________________________"."\n");
+					fwrite($file, " "."\n");
+					fwrite($file, "Name: ". $_POST['first_name']. ' '. $_POST['middle_name']. ' '. $_POST['last_name']."\n");
+					fwrite($file, "Phone Number: ". $_POST['phone_number']."\n");
+					fwrite($file, "Email: ". $_POST['email']."\n");
+					fwrite($file, "Street: ". $_POST['street_input']."\n");
+					fwrite($file, "City: ". $_POST['city_input']."\n");
+					fwrite($file, "State: ". $_POST['state_input']."\n");
+					fwrite($file, "ZipCode: ". $_POST['zip_input']."\n");
+					fwrite($file, " "."\n");
+					fwrite($file, "Product choice: ". $furniturePick."\n");
+					fwrite($file, "Color choice: ". $colorPick."\n");
+					fwrite($file, "Total: $". $Furn_Price."\n");
+					fwrite($file, "Shipping Total: ". $Shipping_Total."\n");
+					fwrite($file, " "."\n");
+					fwrite($file, "THANK YOU FOR ORDERING AT FAME & FURNITURE!");
+					fclose($file);
+				?>
+				</fieldset>
+		<!--End of CUSTOMER RECEIPT-->
 				 </form>
 				 </body>
 		<footer>
